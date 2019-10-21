@@ -99,6 +99,7 @@
         android:id="@+id/t1"
         android:layout_weight="1"
         android:textSize="23sp"
+        android:gravity="center"
         android:layout_width="50dp"
         android:layout_height="match_parent" />
         </LinearLayout>
