@@ -2,12 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="50dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <TextView
+        android:background="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="27sp"
+        android:text=" Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
 
     <EditText
+        android:textColor="#f00"
+        android:textColorHint="@color/colorPrimaryDark"
         android:shadowColor="@color/colorAccent"
         android:id="@+id/et1"
         android:layout_width="match_parent"
@@ -16,6 +27,8 @@
         android:inputType="numberDecimal" />
 
     <EditText
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="#f00"
         android:shadowColor="@color/colorAccent"
         android:id="@+id/et2"
         android:layout_width="match_parent"
@@ -23,24 +36,31 @@
         android:hint="enter second number"
         android:inputType="numberDecimal" />
     <LinearLayout
+        android:layout_marginTop="100dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <Button
+        android:background="#5F00"
         android:textStyle="bold"
         android:id="@+id/b1"
+        android:textSize="25sp"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="+" />
 
     <Button
+        android:background="#5F00"
         android:id="@+id/b2"
+        android:textSize="25sp"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="-" />
 
     <Button
+        android:background="#5F00"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:id="@+id/b3"
         android:layout_width="50dp"
@@ -48,8 +68,10 @@
         android:text="*" />
 
     <Button
+        android:background="#5F00"
         android:textStyle="bold"
         android:id="@+id/b4"
+        android:textSize="25sp"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="/" />
@@ -58,21 +80,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
     <Button
+        android:background="#5F00"
         android:textStyle="bold"
         android:id="@+id/b5"
+        android:textAlignment="center"
+        android:textSize="23sp"
         android:layout_weight="1"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="clear" />
 
     <TextView
-        android:text="result"
+        android:background="#5F00"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:id="@+id/t1"
         android:layout_weight="1"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:layout_width="50dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
