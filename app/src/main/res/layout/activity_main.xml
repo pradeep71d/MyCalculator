@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:shadowColor="@color/colorAccent"
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter first number"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:shadowColor="@color/colorAccent"
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter second number"
+        android:inputType="numberDecimal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/b1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/b3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="*" />
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/b4"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="/" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/b5"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="clear" />
+
+    <TextView
+        android:text="result"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/t1"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
